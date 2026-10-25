@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zgadnij liczbę</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+    <div class="tytul">
+        <div class="ikonka"><h1>?</h1></div>
+        <h1>ZGADNIJ LICZBĘ</h1>
+        <div class="ikonka"><h1>?</h1></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="./main.html">Strona główna</a></li>
+            <li><a href="./zasady.html">Zasady</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="h1tryb">Tryb 1 - liczby maksymalnie 3 cyfrowe</h1>
+        <section class="gra">
+            <div class="liczba"></div>
+            <p>Podaj cyfrę: <input type="number" id="cyfra" min="0" max="9"></p>
+            <button id="sprawdz">Sprawdź</button>
+            <p id="wynik"></p>
+        </section>
+    </main>
+    <script>
+        let liczba = Math.floor(Math.random() * 900) + 100;
+
+        $(".liczba").append(
+            '<div class="ikonka"><h1>?</h1></div>' +
+            '<div class="ikonka"><h1>?</h1></div>' +
+            '<div class="ikonka"><h1>?</h1></div>'
+        );
+    </script>
+</body>
+</html>

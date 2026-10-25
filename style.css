@@ -1,0 +1,75 @@
+*{
+    font-family: 'Roboto';
+}
+body{
+    margin: 0;
+    background-color: silver;
+}
+.tytul, .ikonka, nav, .h1tryb, .tryby, .gra, .liczba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ikonka{
+    height: 40px;
+    width: 40px;
+    margin: 0px 30px;
+    border: 5px solid black;
+    background-color: white;
+}
+nav{
+    border-bottom: 5px solid black;
+}
+nav li{
+    list-style-type: none;
+    margin: 0px 20px;
+    padding: 10px;
+}
+nav li a{
+    font-size: 30px;
+    color: black;
+}
+a, p, button{
+    font-weight: bolder;
+}
+main{
+    padding: 20px;
+    height: 620px;
+}
+ul{
+    display: flex;
+}
+.tryby li{
+    list-style-type: none;
+    margin: 0px 20px;
+    background-color: black;
+    padding: 15px 10px;
+    border-radius: 15px;
+}
+.tryby li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.gra{
+    flex-direction: column;
+    padding: 20px;
+}
+.liczba{
+    margin: 10px 0px;
+}
+.gra p{
+    margin-right: 20px;
+    font-size: 20px; 
+}
+#cyfra{
+    padding: 5px;
+    width: 50px;
+}
+#sprawdz{
+    background-color: black;
+    padding: 15px 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+}
